@@ -1,4 +1,30 @@
 @import './variables';
 @import './_fonts';
-@import '../../theme-base/_components';
+@import '../../theme-base/components';
+@import './extensions/vendor_extensions';
 @import './_extensions';
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {}
+
+::-webkit-scrollbar-track:hover {
+    background: #2C2D2F;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #6C6C6E;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $primaryColor !important;
+    ;
+}
